@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>DevConnect</title>
+</head>
+
+<body>
+
+    <aside class="barra-lateral">
+        <img src="./img/DevConnect-logo.png" alt="Logo do DevConnect">
+        <nav>
+            <ul class="lista-links">
+                <li>
+                    <a href="#" class="link-destaque">Publicar</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/feed.svg">Feed</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/account_circle.svg">Perfil</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/info.svg">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/logout.svg">Sair</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="principal">
+        <div class="upload-img">
+            <div class="container-img">
+                <img class="img-principal" src="./img/imagem1.png" >
+            </div>
+            <button class="upload-btn">Carregar imagem</button>
+            
+            <input type="file" id="img-upload" accept="image/" style="display: none;">
+            <div class="upload-nome-img">
+                <p>image-projeto.png</p>
+                <img src="/img/close.svg">
+            </div>
+        </div>
+
+        <div class="upload-descricao">
+            <h2>Novo Projeto</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome do projeto</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao"></textarea>
+                </div>
+                <div>
+                    <label for="categoria">Tags</label>
+                    <input type="text" id="categoria" name="categoria">
+                </div>
+                <ul class="lista-tags">
+<!--                     <li>
+                        <p>Front-end</p>
+                        <button class="btn-fechar">X</button>
+                    </li> -->
+                </ul>
+                <div class="upload-btns">
+                    <button class="btn-descartar">Descartar</button>
+                    <button class="btn-publicar">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

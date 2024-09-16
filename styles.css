@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('/styles/aside.css');
+@import url('/styles/reset.css');
+@import url('/styles/upload.css');
+
+:root{
+    --cor-destaque: #419AFF;
+    --cor-de-fundo: #181818;
+    --cor-aside: #252525;
+    --cor-do-texto: rgb(219, 219, 219); 
+    --cor-transparente:  rgba(255, 255, 255, 0.082);
+    --fonte-titulo: "Anton", sans-serif;
+    --fonte-texto: "Montserrat", sans-serif;
+}
+
+body{
+    background: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+

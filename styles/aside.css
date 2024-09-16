@@ -1,0 +1,40 @@
+.barra-lateral{
+    background: var(--cor-aside);
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-left: 4rem;
+    height: 80%;
+}
+
+.lista-links{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem 0rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.lista-links li a{
+    text-decoration: none;
+    color: var(--cor-do-texto);
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link-destaque{
+    color: var(--cor-destaque)!important;
+    text-transform: uppercase;
+    font-size: 1.2rem!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    border: 3px solid var(--cor-destaque);
+    border-radius: 10px;
+}
